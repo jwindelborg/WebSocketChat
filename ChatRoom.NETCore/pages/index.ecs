@@ -191,7 +191,7 @@
                             <input type="submit" value="OK" class="hyperlook">
                         </form>
                     </td>
-                    <td><a target="_blank" id="tenmin" href="https://10min.host">Need to send a file? Try 10min.host</a></td>
+                    <td><a target="_blank" id="tenmin" href="https://github.com/jwindelborg/WebSocketChat">This software is free and open source</a></td>
                     <td id="count">People: 0</td>
                 </tr>
                 </tbody>

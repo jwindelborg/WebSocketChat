@@ -9,7 +9,7 @@ namespace ChatRoom.NETCore
     {
         static void Main(string[] args)
         {
-            var server = new RedHttpServer(5002, "public");
+            var server = new RedHttpServer(5000, "public");
             var rman = new RoomManager();
 
             server.Get("/", async (req, res) =>
