@@ -292,8 +292,7 @@
             }
 
             function connectWS() {
-                var ws = new WebSocket("wss://chat.rosenbjerg.dk/ws/" + room);
-//                var ws = new WebSocket("wss://" + location.host + "/ws/" + room);
+                var ws = new WebSocket("wss://chat.windelborg.dk/ws/" + room);
                 ws.onmessage = function (text) {
                     var zchar = text.data.charAt(0);
                     if (zchar === "m"){

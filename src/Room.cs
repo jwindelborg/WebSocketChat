@@ -41,7 +41,7 @@ namespace ChatRoom.NETCore
                     }
                 }
             }
-            
+
 
             public bool Leave(WebSocketDialog wsd)
             {

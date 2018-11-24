@@ -1,7 +1,8 @@
 ﻿using System;
-using System.Text.Encodings.Web;
+using System.Threading;
 using RedHttpServerCore;
 using RedHttpServerCore.Response;
+using System.Text.Encodings.Web;
 
 namespace ChatRoom.NETCore
 {
@@ -19,7 +20,7 @@ namespace ChatRoom.NETCore
                     {"url", "Main"}
                 });
             });
-            
+
             server.Get("/:room", async (req, res) =>
             {
                 var room = System.Net.WebUtility.UrlDecode(req.Params["room"]);
@@ -36,7 +37,7 @@ namespace ChatRoom.NETCore
 
             });
             server.Start();
-            Console.Read();
+            Thread.Sleep(Timeout.Infinite);
         }
     }
 }
